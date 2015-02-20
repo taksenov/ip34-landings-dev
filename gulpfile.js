@@ -14,29 +14,29 @@ var gulp         = require('gulp'),
     less         = require('gulp-less');
 
 // компиляция из LESS в CSS
-//gulp.task('less', function () {
-//    gulp.src('./dev/css/main.less')
-//        .pipe(less())
-//        .pipe(gulp.dest('./dev/less-compilation'))
-//        .pipe(notify('LESS compilation -- All done!'));
-//});
+gulp.task('less', function () {
+    gulp.src('./dev/css/main.less')
+        .pipe(less())
+        .pipe(gulp.dest('./dev/less-compilation'))
+        .pipe(notify('LESS compilation -- All done!'));
+});
 
 // обработка основных CSS
-//gulp.task('css', function () {
-//    gulp.src([
-//              //'./dev/css/jquery-ui.css',
-//              './dev/css/*.css',
-//              './dev/less-compilation/*.css',
-//              //'!./dev/css/vendors/jquery-ui.theme.css',
-//              //'!./dev/css/vendors/*.min.css',
-//              '!./dev/css/bootstrap-theme.css'
-//              ])
-//        .pipe(concatCSS('bundle.css'))
-//        .pipe(minifyCSS())
-//        .pipe(rename('bundle.min.css'))
-//        .pipe(gulp.dest('./app/css'))
-//        .pipe(notify('Css -- All done!'));
-//});
+gulp.task('css', function () {
+    gulp.src([
+              //'./dev/css/jquery-ui.css',
+              './dev/css/*.css',
+              './dev/less-compilation/*.css',
+              //'!./dev/css/vendors/jquery-ui.theme.css',
+              //'!./dev/css/vendors/*.min.css',
+              '!./dev/css/bootstrap-theme.css'
+              ])
+        .pipe(concatCSS('bundle.css'))
+        .pipe(minifyCSS())
+        .pipe(rename('bundle.min.css'))
+        .pipe(gulp.dest('./app/css'))
+        .pipe(notify('Css -- All done!'));
+});
 
 // обработка CSS под ie8
 /*gulp.task('ie8Css', function () {
@@ -80,8 +80,8 @@ gulp.task('js', function() {
 
 // default
 gulp.task('default', [
-                      //'less',
-                      //'css',
+                      'less',
+                      'css',
                       'js'
                      // 'ie8Css',
                      ]);

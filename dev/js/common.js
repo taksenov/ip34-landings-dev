@@ -36,6 +36,10 @@
             // -- удалить ошибку при вводе данных в инпуты
             $('form').on('keydown', 'input', app.removeError);
 
+            // -- проверка того выбрано ли согласие на обраьотку персональных данных
+            $('#personalDataCheck').on('click', app.switchCalculatorChecked);
+            // -- проверка того выбрано ли согласие на обраьотку персональных данных
+
             // -- ввод только цифр в поле телефона
             //$('#inputPhone').on('keypress', app.onlyDigitsValidate);
             //$('#inputPhone').on('paste', app.onlyValidatePaste);
@@ -47,6 +51,21 @@
             // -- ввод только букв в поле ФИО
 
         },
+
+         // -- выбран чекбокс согласия на обработку персональных данных
+        switchCalculatorChecked: function () {
+            if ( $('#personalDataCheck').attr('checked') ) {
+                $('#personalDataCheck').attr('checked', false);
+                //$('#personalDataBtn').removeClass('disabled');
+                $('#personalDataBtn').addClass('disabled');
+            } else {
+                $('#personalDataCheck').attr('checked', 'checked');
+                //$('#personalDataBtn').addClass('disabled');
+                $('#personalDataBtn').removeClass('disabled');
+            }
+        },
+        // -- выбран чекбокс согласия на обработку персональных данных
+
 
         // -- ввод только букв в поле ФИО
         //onlySymbolsValidate: function (e) {

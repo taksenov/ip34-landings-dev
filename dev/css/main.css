@@ -62,11 +62,14 @@
 .opensans-regular {
   font-family: 'open_sans_regular';
 }
+/* ------------------------------------------- */
 /* Примесь для кнопки */
 /* яндекс кнопка */
 /* Примесь для кнопки */
 /* -------= Примесь для кнопки =------- */
 /* anchor кнопка */
+/* -------= Примесь для кнопки =------- */
+/* Примесь для инпута */
 /* Примесь для инпута */
 /* -------= variables =------- */
 /* -------= variables =------- */
@@ -448,6 +451,7 @@
 .details-block__offer-button:before {
   display: none;
 }
+/* -------= details-block =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
 /* -------= imports =------- */
@@ -456,7 +460,7 @@
 .market-block__background {
   background: url("../../static/img/backs2/2nd-bg.jpg");
   background-attachment: fixed;
-  background-repeat: repeat-y;
+  background-repeat: /*no-repeat*/ repeat-y;
   background-position: 100% 0;
   position: relative;
   -webkit-background-size: cover;
@@ -478,6 +482,7 @@
 .market-block__marginbottom {
   margin-bottom: 40px;
 }
+/* -------= market-block =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
 /* -------= imports =------- */
@@ -642,6 +647,7 @@
   color: #151515;
   font-size: 20px;
 }
+/* -------= preference-block =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
 /* -------= imports =------- */
@@ -650,7 +656,7 @@
 .price-block__background {
   background: url("../../static/img/backs2/2nd-bg.jpg");
   background-attachment: fixed;
-  background-repeat: repeat-y;
+  background-repeat: /*no-repeat*/ repeat-y;
   background-position: 100% 0;
   position: relative;
   -webkit-background-size: cover;
@@ -704,6 +710,7 @@
 .price-block__rouble-fontsize-xs {
   font-size: 30px;
 }
+/* -------= price-block =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
 /* -------= imports =------- */
@@ -727,6 +734,7 @@
   color: #01518e;
   font-weight: 600;
 }
+/* -------= businessman-experience-block =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
 /* -------= imports =------- */
@@ -861,6 +869,7 @@
     margin-top: 35px;
   }
 }
+/* -------= feed-back-block =------- */
 /* -------= imports =------- */
 /* -------= imports =------- */
 /* -------= footer-block =------- */
@@ -896,3 +905,5 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+/* -------= footer-block =------- */
+/* -------= imports =------- */
